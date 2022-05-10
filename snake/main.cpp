@@ -1,10 +1,9 @@
-﻿#include "GameLogic.h"
-#include "SnakeLogic.h"
+﻿#include "SnakeLogic.h"
 
 int main() {
-	GameLogic* game = new GameLogic();
+	srand(time(0));
+
 	SnakeLogic* snake = new SnakeLogic();
 
-	game->setUp();
 	snake->showSnake();
 }
